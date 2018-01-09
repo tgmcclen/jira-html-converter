@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require "jira_html_converter"
+
+JiraHtmlConverter::MyCLI.start(ARGV)
+
