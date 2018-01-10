@@ -1,4 +1,4 @@
-# Jira Html Converter
+# Jira HTML Converter
 
 This gem provides a small command line utility to convert Atlassian Jira exports (in CSV format) that have an HTML `Description` field (common when 
 using the jEditor plugin) to Markdown.  This allows you to then import the Jira data into another instance that is using Markdown for the `Description` field                                           
