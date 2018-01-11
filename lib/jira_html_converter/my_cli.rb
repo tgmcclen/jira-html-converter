@@ -14,6 +14,7 @@ module JiraHtmlConverter
       puts "Destination: #{ANSI::Code.yellow { file_out } }"
 
       csv_text = File.read(file_in)
+      csv_text = csv_text.encode('UTF-8', invalid: :replace, undef: :replace)
       csv_in = CSV.parse(csv_text, headers: true)
       CSV.open(file_out, "wb") do |csv_out|
         csv_out << csv_in.headers
